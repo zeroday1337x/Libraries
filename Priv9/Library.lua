@@ -215,11 +215,6 @@
                 
                 return getcustomasset(Name .. ".font");
             end
-            
-            local ProggyTiny = Register_Font("Tahoma", 200, "Normal", {
-                Id = "Tahoma.ttf",
-                Font = game:HttpGet("https://github.com/i77lhm/storage/raw/refs/heads/main/fonts/tahoma_bold.ttf"),
-            })
 
             local ProggyClean = Register_Font("ProggyClean", 200, "normal", {
                 Id = "ProggyClean.ttf",
@@ -227,7 +222,6 @@
             })
             
             fonts = {
-                ["TahomaBold"] = Font.new(ProggyTiny, Enum.FontWeight.Regular, Enum.FontStyle.Normal);
                 ["ProggyClean"] = Font.new(ProggyClean, Enum.FontWeight.Regular, Enum.FontStyle.Normal);
             }
         end
@@ -565,7 +559,7 @@
                 });
                 
                 local ui_title = library:create("TextLabel", {
-                    FontFace = fonts["TahomaBold"];
+                    FontFace = fonts["ProggyClean"];
                     TextColor3 = rgb(255, 255, 255);
                     BorderColor3 = rgb(0, 0, 0);
                     Text = cfg.name;
@@ -994,7 +988,7 @@
                 });
                 
                 local title = library:create("TextLabel", {
-                    FontFace = fonts["TahomaBold"];
+                    FontFace = fonts["ProggyClean"];
                     TextColor3 = rgb(255, 255, 255);
                     BorderColor3 = rgb(0, 0, 0);
                     Text = cfg.name;

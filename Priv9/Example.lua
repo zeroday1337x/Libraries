@@ -1,5 +1,5 @@
 -- More advanced docs: https://github.com/0x340/Priv9-UI-Libary
-local library, notifications = loadstring(game:HttpGet("https://raw.githubusercontent.com/i77lhm/Libraries/refs/heads/main/Priv9/Library.lua"))()
+local library, notifications = loadstring(game:HttpGet("https://raw.githubusercontent.com/zeroday1337x/Libraries/refs/heads/main/Priv9/Library.lua"))()
 
 local window = library:window({
 	name = "priv9",
